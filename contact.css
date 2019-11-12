@@ -1,0 +1,507 @@
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    
+}
+
+/* Landing Frame ------------------ */
+
+.frame-0 {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    background: #FED00E;
+    
+    
+}
+
+.nav {
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    background: black;
+    z-index: 1;
+   
+}
+
+#logo {
+    position: relative;
+    height: 50px;
+    width: auto;
+    left: 150px;
+    top: 25px;
+    cursor: pointer;
+}
+
+ul.links {
+    position: absolute;
+    right: 150px;
+    top: 25px;
+    z-index: 2;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.links li {
+    float: left;
+}
+
+ul.links a {
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 12px;
+    font-family: roboto;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+ul.links a:hover {
+    border-bottom: 1px #fed00e solid;
+}
+
+.team-section {
+    position: relative;
+    width: 100vw;
+    height: 1100px;
+    z-index: 1;
+}
+
+.team-grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 220px);
+    width: 875px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    grid-gap: 20px;
+    /*border: 1px solid black; */
+    
+}
+
+.employee {
+    height: 220px;
+    width: 200px;
+    overflow: hidden;
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+    /*border: 1px solid black; */
+}
+
+
+.employee img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transform: translate(0, -30px);
+    transition: 0.5s;
+}
+
+.employee p {
+    position: relative;
+    left: 10px;
+    top: 180px;
+    font-size: 15px;
+    font-family: roboto;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+    z-index: 3;
+    color: black;
+    user-select: none;
+    background: #fed00e;
+    padding: 5px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+#company-copy {
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-family: roboto;
+    text-transform: none;
+    color: black;
+    z-index: 1;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 875px;
+}
+
+.employee a {
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+    font-family: roboto;
+    text-transform: none;
+    margin: 0;
+    letter-spacing: 2px;
+    z-index: 5;
+    color: white;
+    user-select: none;
+    background: black;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+    
+
+.button-b {
+    position: relative;
+    left: 150px;
+    top: 220px;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    z-index: 2;
+    box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.0);
+    transition: 0.3s;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+}
+
+.button-b:hover {
+    box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.35);
+}
+
+.button-b a {
+    position: absolute;
+    height: 17px;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: roboto;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration-line: none;
+    
+}
+
+/* Frame 5 ------------------- */
+.frame-5 {
+    position: relative;
+    height: 200px;
+    width: 100vw;
+    background: #fed00e;
+    z-index: 0;
+}
+
+#footer-asset {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    z-index: 3;
+    margin: 0;
+    left: 0;
+    transform: translate( 150px, 75px);
+}
+
+.footer-copy-container {
+    position: absolute;
+    right: 150px;
+    top: 80px;
+    width: 300px;
+    height: auto;
+   
+}
+
+.footer-copy-container a {
+    font-family: roboto;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    margin: 0;
+    
+}
+
+
+#email {
+    font-size: 12px;
+}
+
+#location {
+    font-size: 26px;
+}
+
+#company {
+    font-size: 10px;
+}
+
+
+/* -------------------------------- */
+/* -------------------------------- */
+/* Mobile Layout ----------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
+
+@media screen and (max-device-width : 812px) {
+    
+    
+    
+        body {
+        overflow-x: hidden;
+        
+        margin: 0;
+    }
+
+    /* Landing Frame ------------------ */
+
+    .frame-0 {
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+        background: #FED00E;
+
+    }
+
+    .nav {
+        position: relative;
+        width: 100vw;
+        height: 100px;
+        background: black;
+        z-index: 1;
+
+    }
+
+    #logo {
+        position: relative;
+        height: 50px;
+        width: auto;
+        left: 150px;
+        top: 25px;
+        cursor: pointer;
+    }
+
+    ul.links {
+        position: absolute;
+        right: 150px;
+        top: 25px;
+        z-index: 2;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    ul.links li {
+        float: left;
+    }
+
+    ul.links a {
+        color: white;
+        font-size: 18px;
+        display: block;
+        padding: 12px;
+        font-family: roboto;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration-line: none;
+    }
+
+    ul.links a:hover {
+        border-bottom: 1px #fed00e solid;
+    }
+
+.team-section {
+    position: relative;
+    width: 100vw;
+    height: 1800px;
+    user-select: none;
+}
+
+.team-grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 200px);
+    height: 875px;
+    width: 650px;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*border: 1px solid black; */
+    grid-gap: 25px;
+    
+}
+
+#employee {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    opacity: 1;
+    transition: 0.5s;
+    user-select: none;
+    outline-style: none !important;
+    /*border: 1px solid black; */
+}
+
+
+
+#employee img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+#employee p {
+    position: relative;
+    left: 10px;
+    top: 190px;
+    font-size: 15px;
+    font-family: roboto;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+    z-index: 3;
+    color: black;
+    user-select: none;
+    background: #fed00e;
+    padding: 5px;
+    display: inline-block;
+    user-select: none;
+    
+}
+    
+.employee a {
+    position: relative;
+    top: 0px;
+    font-size: 14px;
+    font-family: roboto;
+    text-transform: none;
+    margin: 0;
+    letter-spacing: 2px;
+    z-index: 5;
+    color: white;
+    user-select: none;
+    background: black;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.5s;
+    user-select: none;
+}
+
+#company-copy {
+    position: relative;
+    font-size: 33px;
+    letter-spacing: 0.5px;
+    font-family: roboto;
+    text-transform: none;
+    color: black;
+    z-index: 1;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 650px;
+}
+    
+
+.button-b {
+    position: relative;
+    top: 370px;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    background: white;
+    z-index: 2;
+    box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.0);
+    transition: 0.3s;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+}
+
+.button-b:hover {
+    box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.35);
+}
+
+.button-b a {
+    position: absolute;
+    height: 20px;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: roboto;
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration-line: none;
+}
+
+    /* Frame 5 ------------------- */
+    .frame-5 {
+        position: relative;
+        height: 200px;
+        width: 100vw;
+        background: #fed00e;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    #footer-asset {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        z-index: 3;
+        margin: 0;
+        left: 10px;
+        
+    }
+
+    .footer-copy-container {
+        position: absolute;
+        right: 100px;
+        top: 80px;
+        width: 300px;
+        height: auto;
+
+    }
+
+    .footer-copy-container a {
+        font-family: roboto;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+        margin: 0;
+
+    }
+
+    #email {
+        font-size: 12px;
+    }
+
+    #location {
+        font-size: 26px;
+    }
+
+    #company {
+        font-size: 10px;
+    }
+}
+
+
